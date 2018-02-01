@@ -10,6 +10,14 @@ namespace Interfaces
     {
         static void Main(string[] args)
         {
+            Cat cat = new Cat();
+            cat.Name = "Mirre";
+            Console.WriteLine("Here is {0}: {1}", cat.Name, cat.Talk()); // Here is Mirre: Miau!
+
+            Dog dog = new Dog { Name = "Musti" };
+            Console.WriteLine("Here is {0}: {1}", dog.Name, dog.Talk()); // Here is Musti: Wuw!
+
+            Console.ReadKey();
         }
     }
 }
